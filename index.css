@@ -1,0 +1,208 @@
+:root {
+    --text: #18181b;
+    --bg:#fafafa;
+    --primary:#fef3c7;
+    --secondary:#172554;
+    --accent: #fbbf24;
+
+    --font: 'Cabinet Grotesk', sans-serif;
+
+    --s: 1.05rem;
+    --m: 1.15rem;
+    --l: 2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--font);
+}
+
+img{
+    transition: filter 1s ease;
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+header{
+    background-color: var(--bg);
+    color: #18181b;
+    padding: 0.25em;
+}
+header a:first-child{
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
+li{
+    display: inline;
+}
+.homeBtn{
+    text-decoration: none;
+    font-size: var(--m);
+    color: var(--bg);
+    background-color: var(--secondary);
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.5rem;
+    margin-right: 80%;
+    box-shadow: 0 0.25rem 0.75rem var(--text);
+}
+.homeBtn:hover{
+    color: var(--text);
+    background-color: var(--accent);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.petsBtn{
+    margin-left: 7%;
+    margin-right: 2%;
+}
+.petsBtn, .submitBtn{
+    text-decoration: none;
+    font-size: var(--s);
+    color: var(--text);
+
+}
+.petsBtn:hover, .submitBtn:hover{
+    color: var(--accent);
+    transition: 0.5s;
+}
+
+.greeting{
+    background-color: var(--secondary);
+    color: var(--bg);
+    padding: 10%;
+
+}
+.greeting h2{
+    font-weight: bolder;
+    font-size: var(--l);
+}
+.greeting img{
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin-top: -12.5%;
+}
+.saved {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 10%;
+}
+.saved img{
+    width: 25%;
+    height: 25%;
+}
+.statistics {
+    margin-left: 50%;
+    margin-top: -15%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary);
+    color: var(--bg);
+}
+.checkmeout{
+    background-color: var(--secondary);
+    color: var(--bg);
+    padding: 5%;
+    text-align: center;
+
+}
+.checkmeout button{
+    padding: 1%;
+    margin-top: 2%;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    box-shadow: 0 0.25rem 0.75rem var(--text);
+    transition: transform 1s ease;
+}
+
+.checkmeout button:hover{
+    padding: 1%;
+    border-radius: 1rem;
+    background-color: var(--accent);
+    color: var(--secondary);
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-5px);
+
+}
+
+.join{
+    background-color: var(--secondary);
+    color: var(--bg);
+    padding: 5%;
+    text-align: center;
+
+}
+.join p{
+    width: 50%;    
+    text-align: center;
+    margin-left: 25%;
+}
+.join hr{
+    background-color: var(--bg);
+    padding: 1px;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.join button{
+    padding: 1%;
+    margin-top: 5%;
+    border-radius: 1rem;
+    background-color: var(--secondary);
+    color: var(--accent);
+    box-shadow: 0 0.25rem 0.75rem var(--text);
+    border: 1px solid var(--accent);
+    transition: transform 1s ease;
+
+}
+
+.join button:hover{
+    padding: 1%;
+    border-radius: 1rem;
+    background-color: var(--accent);
+    color: var(--secondary);
+    border: 1px solid var(--accent);
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-5px);
+
+}
+.moreinfo{
+    padding: 5%;
+    background-image: url(/pages/img/divbgfinished.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--bg);
+}
+.moreinfo article {
+    background-color: var(--secondary);
+    padding: 2.5%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+footer{
+    padding: 0.25rem;
+    background-color: var(--text);
+    color: var(--bg);
+    text-align: center;
+}
